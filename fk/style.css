@@ -73,19 +73,38 @@ p {
     }
 }
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Cool Animated Website</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <h1>Welcome to my cool animated website!</h1>
-        <p>This website demonstrates some basic CSS animations.</p>
-        <a href="https://www.calculator.net/" target="_blank" class="animate-button">Go to Calculator</a>
-    </div>
+body {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    background: linear-gradient(to right, #f06b6b, #f0966b, #f0c26b, #f0e86b, #f0f06b);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease-in-out infinite;
+}
 
-    <script src="script.js"></script>
-</body>
-</html>
+.container {
+    /* ... rest of your container styles ... */
+}
+
+h1 {
+    /* ... rest of your heading styles ... */
+}
+
+p {
+    /* ... rest of your paragraph styles ... */
+}
+
+.animate-button {
+    /* ... rest of your button styles ... */
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
