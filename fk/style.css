@@ -1,0 +1,74 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #111111;
+    color: #ffffff;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    animation: title-animation 2s infinite alternate;
+}
+
+p {
+    margin-bottom: 40px;
+}
+
+.animate-button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #ff5733;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.animate-button:hover {
+    background-color: #ff7f50;
+}
+
+@keyframes title-animation {
+    0% {
+        transform: scale(1);
+        color: #ff5733;
+    }
+    50% {
+        transform: scale(1.2);
+        color: #ff7f50;
+    }
+    100% {
+        transform: scale(1);
+        color: #ff5733;
+    }
+}
+
+/* ... rest of your CSS code ... */
+
+.animate-button {
+    /* ... rest of your button styles ... */
+    animation: button-animation 0.5s ease-in-out infinite;
+}
+
+@keyframes button-animation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
