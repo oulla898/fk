@@ -72,3 +72,20 @@ p {
         transform: scale(1);
     }
 }
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cool Animated Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to my cool animated website!</h1>
+        <p>This website demonstrates some basic CSS animations.</p>
+        <a href="https://www.calculator.net/" target="_blank" class="animate-button">Go to Calculator</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
